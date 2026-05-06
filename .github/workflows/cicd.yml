@@ -72,6 +72,8 @@ jobs:
 
             cd ${{ secrets.DEPLOY_PATH }}
 
+            export MIGRATIONS_SERVICE_TAG=${{ github.sha }}
+
             docker pull $IMAGE
 
             docker compose up -d migrations

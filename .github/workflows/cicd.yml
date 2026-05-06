@@ -42,7 +42,7 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            IMAGE=${{ secrets.DOCKER_REGISTRY }}/${{ secrets.REGISTRY_PROJECT }}/ticketrush-migration_services:latest
+            IMAGE=${{ secrets.DOCKER_REGISTRY }}/${{ secrets.REGISTRY_PROJECT }}/ticketrush-migrations_service:latest
 
             echo "Deploying $IMAGE"
 

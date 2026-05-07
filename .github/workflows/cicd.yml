@@ -76,4 +76,4 @@ jobs:
 
             docker pull $IMAGE
 
-            docker compose up -d migrations
+            docker compose up -d --no-deps migrations
